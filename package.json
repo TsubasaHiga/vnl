@@ -1,0 +1,42 @@
+{
+  "name": "vnl",
+  "version": "0.0.0",
+  "description": "Vite npm library development boilerplate",
+  "author": "example",
+  "homepage": "https://example.com",
+  "license": "ISC",
+  "type": "module",
+  "files": ["dist"],
+  "sideEffects": false,
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.es.js",
+    "require": "./dist/index.cjs.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "analyze": "tsc && vite build --mode analyze",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "biome lint",
+    "format": "biome format"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.12.0",
+    "@vitest/coverage-v8": "^3.0.4",
+    "happy-dom": "^16.7.3",
+    "rollup-plugin-license": "^3.5.3",
+    "rollup-plugin-visualizer": "^5.14.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.5.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.4"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}
